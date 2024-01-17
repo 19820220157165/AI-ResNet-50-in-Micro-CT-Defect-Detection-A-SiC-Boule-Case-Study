@@ -1,0 +1,1 @@
+# Ai-ResNet-50-in-Micro-CT-Defect-Detection-A-SiC-Boule-Case-Study
