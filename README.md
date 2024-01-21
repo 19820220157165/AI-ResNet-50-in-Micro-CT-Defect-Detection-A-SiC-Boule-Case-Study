@@ -1,4 +1,4 @@
-# Ai (ResNet-50) in Micro-CT Defect Detection: A SiC Boule Case Study
+# AI (ResNet-50) in Micro-CT Defect Detection: A SiC Boule Case Study
 ## How to run
 ### Dataset Structure
 ```
