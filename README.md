@@ -34,6 +34,7 @@ dataset_path
 ``
 ### Test
 ``
+We provide pre-trained model can be found [here](https://pan.quark.cn/s/1c9d54b2947b), and you can put the pre-trained model in the result directly and use for prediction by running the command below. Please ensure that your test pictures are stored in the format of Dataset Structure above.
 python main.py --dataset_path ./your own path --phase eval --inference_image_path ./test.bmp --save_path ./result
 ``
 ### Contact

@@ -169,16 +169,16 @@ def train_resnet_model(num_classes, image_size, dropout, lr, epochs, save_path, 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset_path', type=str, default='./6 inch 4H-SiC boule dataset_/6 inch 4H-SiC boule dataset', help="your dataset path")
+    parser.add_argument('--dataset_path', type=str, default='G:\\code\\12.29\\6 inch 4H-SiC boule dataset_\\6 inch 4H-SiC boule_test dataset', help="your dataset path")
     parser.add_argument('--phase', type=str, default='eval', choices=['train', 'eval'], help="choose to train or eval")
     parser.add_argument('--image_size', type=int, default=224, help="image width and height in datasets")
     parser.add_argument('--batch_size', type=int, default=64, help="batch_size")
     parser.add_argument('--split_size', type=float, default=0.8, help="split size for train and validation dataset")
-    parser.add_argument('--epochs', type=int, default=200, help="epochs")
+    parser.add_argument('--epochs', type=int, default=50, help="epochs")
     parser.add_argument('--dropout', type=float, default=0.3, help="dropout ratio")
     parser.add_argument('--num_classes', type=int, default=6, help="num of categories")
     parser.add_argument('--lr', type=float, default=0.001, help="learning rate")
-    parser.add_argument('--inference_image_path', type=str, default='./test.bmp', help="select an image to inference")
+    parser.add_argument('--inference_image_path', type=str, default='G:\\code\\12.29\\6 inch 4H-SiC boule dataset_\\test\\2023-07-15_152832.bmp', help="select an image to inference")
     parser.add_argument('--save_path', type=str, default='./result', help="where to save your best model weights")
     args = parser.parse_args()
 
@@ -231,4 +231,6 @@ if __name__ == '__main__':
                               pred,
                               target,
                               args.save_path)
+        funcPredictAndDisplay(model, args.inference_image_path, args.save_path, class_names)
+
 
